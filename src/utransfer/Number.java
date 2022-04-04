@@ -6,6 +6,7 @@
 package utransfer;
 
 import javax.swing.JOptionPane;
+import utransfer.airtel.main;
 
 /**
  *
@@ -97,6 +98,7 @@ public class Number extends javax.swing.JFrame {
         else if((number.startsWith("075") || number.startsWith("070")) && number.length() == 10){
             JOptionPane.showMessageDialog(null, "successfully entered Airtel number");
             System.out.print("welcome to Airtel");
+            new main().setVisible(true);
         }
         else if((number.startsWith("077") || number.startsWith("078")) && number.length() == 10){
             JOptionPane.showMessageDialog(null, "successfully entered MTN number");

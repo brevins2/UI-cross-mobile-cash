@@ -41,7 +41,7 @@ public class welcome extends javax.swing.JFrame {
         setResizable(false);
         setState(1);
 
-        MainPane.setBackground(new java.awt.Color(204, 255, 204));
+        MainPane.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(51, 153, 0));
@@ -62,7 +62,7 @@ public class welcome extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(204, 204, 255));
+        jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jButton2.setForeground(new java.awt.Color(0, 255, 255));
         jButton2.setText("Lycamobile");
@@ -73,7 +73,7 @@ public class welcome extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(204, 204, 255));
+        jButton3.setBackground(new java.awt.Color(255, 255, 255));
         jButton3.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 0));
         jButton3.setText("MTN");
@@ -84,7 +84,7 @@ public class welcome extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(204, 204, 255));
+        jButton4.setBackground(new java.awt.Color(255, 255, 255));
         jButton4.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 51, 0));
         jButton4.setText("AIRTEL");
