@@ -136,18 +136,23 @@ public class main extends javax.swing.JFrame {
     private void nextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextActionPerformed
         
         if("1".equals(choice.getText().trim())){
+            new airtime().setVisible(true);
             System.out.print("");
         }
         else if("2".equals(choice.getText().trim())){
+            new mobileInternet().setVisible(true);
             System.out.print("");
         }
         else if("3".equals(choice.getText().trim())){
+            new SMS().setVisible(true);
             System.out.print("");
         }
         else if("4".equals(choice.getText().trim())){
+            new voiceBundles().setVisible(true);
             System.out.print("");
         }
         else if("5".equals(choice.getText().trim())){
+            new mobilemoney().setVisible(true);
             System.out.print("");
         }
         else{

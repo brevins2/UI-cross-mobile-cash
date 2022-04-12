@@ -6,6 +6,8 @@
 package utransfer;
 
 import javax.swing.JOptionPane;
+import utransfer.MTN.MTN;
+import utransfer.airtel.Airtel;
 import utransfer.airtel.main;
 
 /**
@@ -103,6 +105,7 @@ public class Number extends javax.swing.JFrame {
         else if((number.startsWith("077") || number.startsWith("078")) && number.length() == 10){
             JOptionPane.showMessageDialog(null, "successfully entered MTN number");
             System.out.print("welcome to MTN");
+            new MTN().setVisible(true);
         }
         else if(number.startsWith("072") && number.length() == 10){
             JOptionPane.showMessageDialog(null, "successfully entered Lycamobile number");
