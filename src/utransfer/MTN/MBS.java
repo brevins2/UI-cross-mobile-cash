@@ -5,6 +5,8 @@
  */
 package utransfer.MTN;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author brevin
@@ -27,15 +29,15 @@ public class MBS extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        MBS30 = new javax.swing.JButton();
+        MBS80 = new javax.swing.JButton();
+        MBS180 = new javax.swing.JButton();
+        MBS400 = new javax.swing.JButton();
+        GB1 = new javax.swing.JButton();
+        MBS500 = new javax.swing.JButton();
+        GB5 = new javax.swing.JButton();
+        GB20 = new javax.swing.JButton();
+        GB117 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         MainManu = new javax.swing.JMenuBar();
         daily = new javax.swing.JMenu();
@@ -45,23 +47,68 @@ public class MBS extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Welcome to Mobile Internet Bundles");
 
-        jButton1.setText("30 MBS");
+        MBS30.setText("30 MBS");
+        MBS30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MBS30ActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("80 MBS");
+        MBS80.setText("80 MBS");
+        MBS80.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MBS80ActionPerformed(evt);
+            }
+        });
 
-        jButton3.setText("180MBS");
+        MBS180.setText("180MBS");
+        MBS180.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MBS180ActionPerformed(evt);
+            }
+        });
 
-        jButton4.setText("400 MBS");
+        MBS400.setText("400 MBS");
+        MBS400.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MBS400ActionPerformed(evt);
+            }
+        });
 
-        jButton5.setText("1 GB -3days");
+        GB1.setText("1 GB -3days");
+        GB1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GB1ActionPerformed(evt);
+            }
+        });
 
-        jButton6.setText("500 MBS-1hr");
+        MBS500.setText("500 MBS-1hr");
+        MBS500.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MBS500ActionPerformed(evt);
+            }
+        });
 
-        jButton7.setText("5 GB -week");
+        GB5.setText("5 GB -week");
+        GB5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GB5ActionPerformed(evt);
+            }
+        });
 
-        jButton8.setText("20 GB- Monthly");
+        GB20.setText("20 GB- Monthly");
+        GB20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GB20ActionPerformed(evt);
+            }
+        });
 
-        jButton9.setText("1.17 GB -Monthly");
+        GB117.setText("1.17 GB -Monthly");
+        GB117.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GB117ActionPerformed(evt);
+            }
+        });
 
         jButton11.setBackground(new java.awt.Color(255, 51, 0));
         jButton11.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
@@ -91,26 +138,26 @@ public class MBS extends javax.swing.JFrame {
                 .addGap(45, 45, 45)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton9)
+                        .addComponent(GB117)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(GB20, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(layout.createSequentialGroup()
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(MBS400, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
-                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(GB1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(MBS500, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(layout.createSequentialGroup()
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(MBS30, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(18, 18, 18)
-                                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(MBS80, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(18, 18, 18)
-                                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(MBS180, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(GB5, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGap(45, 45, 45))))
@@ -121,20 +168,20 @@ public class MBS extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(43, 43, 43)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(MBS30, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MBS80, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MBS180, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(MBS400, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(GB1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MBS500, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(GB5, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(GB117, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(GB20, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
                 .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32))
@@ -146,6 +193,150 @@ public class MBS extends javax.swing.JFrame {
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void MBS30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MBS30ActionPerformed
+        
+        int balance = 7000;
+        int price = 250;
+        
+        if(price>balance){
+            JOptionPane.showMessageDialog(null, "insuffiecient amount, reload anf try again later");
+            System.exit(0);
+        }
+        else{
+        balance -= price;
+            JOptionPane.showMessageDialog(null, "You have bought 30MBS at 250SHS your balance is "+ balance);
+            System.out.print("You have bought 30MBS at 250SHS your balance is "+ balance);
+        }
+    }//GEN-LAST:event_MBS30ActionPerformed
+
+    private void MBS80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MBS80ActionPerformed
+        
+        int balance = 7000;
+        int price = 500;
+        
+        if(price>balance){
+            JOptionPane.showMessageDialog(null, "insuffiecient amount, reload anf try again later");
+            System.exit(0);
+        }
+        else{
+        balance -= price;
+            JOptionPane.showMessageDialog(null, "You have bought 80MBS at 500SHS your balance is "+ balance);
+            System.out.print("You have bought 80MBS at 500SHS your balance is "+ balance);
+        }
+    }//GEN-LAST:event_MBS80ActionPerformed
+
+    private void MBS180ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MBS180ActionPerformed
+        
+        int balance = 7000;
+        int price = 1000;
+        
+        if(price>balance){
+            JOptionPane.showMessageDialog(null, "insuffiecient amount, reload anf try again later");
+            System.exit(0);
+        }
+        else{
+        balance -= price;
+            JOptionPane.showMessageDialog(null, "You have bought 180MBS at 1000SHS your balance is "+ balance);
+            System.out.print("You have bought 180MBS at 1000SHS your balance is "+ balance);
+        }
+    }//GEN-LAST:event_MBS180ActionPerformed
+
+    private void MBS400ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MBS400ActionPerformed
+        
+        int balance = 7000;
+        int price = 2000;
+        
+        if(price>balance){
+            JOptionPane.showMessageDialog(null, "insuffiecient amount, reload anf try again later");
+            System.exit(0);
+        }
+        else{
+        balance -= price;
+            JOptionPane.showMessageDialog(null, "You have bought 400MBS at 2000SHS your balance is "+ balance);
+            System.out.print("You have bought 400MBS at 2000SHS your balance is "+ balance);
+        }
+    }//GEN-LAST:event_MBS400ActionPerformed
+
+    private void GB1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GB1ActionPerformed
+        
+        int balance = 7000;
+        int price = 5000;
+        
+        if(price>balance){
+            JOptionPane.showMessageDialog(null, "insuffiecient amount, reload anf try again later");
+            System.exit(0);
+        }
+        else{
+        balance -= price;
+            JOptionPane.showMessageDialog(null, "You have bought 1GB at 5000SHS your balance is "+ balance);
+            System.out.print("You have bought 1GB at 5000SHS your balance is "+ balance);
+        }
+    }//GEN-LAST:event_GB1ActionPerformed
+
+    private void MBS500ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MBS500ActionPerformed
+        
+        int balance = 7000;
+        int price = 3000;
+        
+        if(price>balance){
+            JOptionPane.showMessageDialog(null, "insuffiecient amount, reload anf try again later");
+            System.exit(0);
+        }
+        else{
+        balance -= price;
+            JOptionPane.showMessageDialog(null, "You have bought 500MBS at 3000SHS your balance is "+ balance);
+            System.out.print("You have bought 500MBS at 3000SHS your balance is "+ balance);
+        }
+    }//GEN-LAST:event_MBS500ActionPerformed
+
+    private void GB5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GB5ActionPerformed
+        
+        int balance = 7000;
+        int price = 6500;
+        
+        if(price>balance){
+            JOptionPane.showMessageDialog(null, "insuffiecient amount, reload anf try again later");
+            System.exit(0);
+        }
+        else{
+        balance -= price;
+            JOptionPane.showMessageDialog(null, "You have bought 5GB at 6500SHS your balance is "+ balance);
+            System.out.print("You have bought 5GB at 6500SHS your balance is "+ balance);
+        }
+    }//GEN-LAST:event_GB5ActionPerformed
+
+    private void GB117ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GB117ActionPerformed
+        
+        int balance = 7000;
+        int price = 7000;
+        
+        if(price>balance){
+            JOptionPane.showMessageDialog(null, "insuffiecient amount, reload anf try again later");
+            System.exit(0);
+        }
+        else{
+        balance -= price;
+            JOptionPane.showMessageDialog(null, "You have bought 1.17GB at 7000SHS your balance is "+ balance);
+            System.out.print("You have bought 1.17GB at 7000SHS your balance is "+ balance);
+        }
+    }//GEN-LAST:event_GB117ActionPerformed
+
+    private void GB20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GB20ActionPerformed
+        
+        int balance = 7000;
+        int price = 50000;
+        
+        if(price>balance){
+            JOptionPane.showMessageDialog(null, "insuffiecient amount, reload anf try again later");
+            System.exit(0);
+        }
+        else{
+            balance -= price;
+            JOptionPane.showMessageDialog(null, "You have bought 20GB at 50000SHS your balance is "+ balance);
+            System.out.print("You have bought 20GB at 50000SHS your balance is "+ balance);
+        }
+    }//GEN-LAST:event_GB20ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -183,18 +374,18 @@ public class MBS extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton GB1;
+    private javax.swing.JButton GB117;
+    private javax.swing.JButton GB20;
+    private javax.swing.JButton GB5;
+    private javax.swing.JButton MBS180;
+    private javax.swing.JButton MBS30;
+    private javax.swing.JButton MBS400;
+    private javax.swing.JButton MBS500;
+    private javax.swing.JButton MBS80;
     private javax.swing.JMenuBar MainManu;
     private javax.swing.JMenu daily;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JMenu monthly;
     private javax.swing.JMenu weekly;
     // End of variables declaration//GEN-END:variables

@@ -16,6 +16,9 @@ public class MTN extends javax.swing.JFrame {
     /**
      * Creates new form MTN
      */
+    
+    public int airtimeBalance = 7000;
+    public int mobileMoneyBalance = 20000;
     public MTN() {
         initComponents();
     }
@@ -75,6 +78,11 @@ public class MTN extends javax.swing.JFrame {
         chckBalance.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         chckBalance.setText("Check Balance");
         chckBalance.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        chckBalance.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                chckBalanceActionPerformed(evt);
+            }
+        });
 
         mmoney.setBackground(new java.awt.Color(255, 255, 255));
         mmoney.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -90,6 +98,11 @@ public class MTN extends javax.swing.JFrame {
         account.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         account.setText("My Account");
         account.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        account.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accountActionPerformed(evt);
+            }
+        });
 
         cncl.setBackground(new java.awt.Color(255, 0, 0));
         cncl.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -148,7 +161,7 @@ public class MTN extends javax.swing.JFrame {
 
     private void mmoneyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mmoneyActionPerformed
         
-        
+        new mobileMoney().setVisible(true);
         
     }//GEN-LAST:event_mmoneyActionPerformed
 
@@ -175,6 +188,18 @@ public class MTN extends javax.swing.JFrame {
         new MBS().setVisible(true);
         
     }//GEN-LAST:event_mbsActionPerformed
+
+    private void chckBalanceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chckBalanceActionPerformed
+        
+        new check().setVisible(true);
+        
+    }//GEN-LAST:event_chckBalanceActionPerformed
+
+    private void accountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accountActionPerformed
+        
+        new account().setVisible(true);
+        
+    }//GEN-LAST:event_accountActionPerformed
 
     /**
      * @param args the command line arguments
