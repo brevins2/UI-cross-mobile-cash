@@ -19,6 +19,7 @@ public class MTN extends javax.swing.JFrame {
     
     public int airtimeBalance = 7000;
     public int mobileMoneyBalance = 20000;
+    public int pin = 23734;
     public MTN() {
         initComponents();
     }
